@@ -1,12 +1,13 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
-      <ChakraProvider>OLA</ChakraProvider>
+      <ChakraProvider>
+        <AppRoutes />
+      </ChakraProvider>
     </BrowserRouter>
   );
 }
-
-export default App;
