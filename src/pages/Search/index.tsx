@@ -19,6 +19,8 @@ export default function Search() {
           className={styles.lupa}
         />
         <input ref={inputRef} placeholder="Search" />
+
+        <button className={styles.buttonSearch}>Search</button>
       </form>
     </section>
   );

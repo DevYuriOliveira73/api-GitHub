@@ -29,6 +29,8 @@
   position: relative;
   align-items: center;
   width: 100%;
+  max-width: 800px;
+  height: 56px;
 }
 
 .lupa {
@@ -43,8 +45,52 @@
   border-radius: 4px;
   padding: 0 8px 0 48px;
   width: 100%;
-  height: 56px;
+  height: 100%;
+  max-width: 592px;
 }
 .input > input::placeholder {
   color: black;
+}
+
+.buttonSearch {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .buttonSearch {
+    display: block;
+    width: 176px;
+    height: 100%;
+    padding: 10px 24px;
+    border-radius: 6px;
+    background-color: var(--cor-api-purple);
+    color: white;
+
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-family: "Inter";
+  }
+
+  .input {
+    height: 48px;
+    gap: 32px;
+  }
+
+  .input > input {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+  }
+
+  .input > input::placeholder {
+    color: #0000005c;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .container {
+    gap: 56px;
+  }
 }
