@@ -3,7 +3,10 @@ import { useRef } from "react";
 export default function Search() {
   const inputRef = useRef<HTMLInputElement>(null);
 
-  function handleSubmit() {}
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    console.log(inputRef.current?.value);
+  }
 
   return (
     <section className={styles.container}>
@@ -12,7 +15,7 @@ export default function Search() {
         <span>d_evs</span>
       </h1>
 
-      <form className={styles.input}>
+      <form onSubmit={handleSubmit} className={styles.input}>
         <img
           src="/leading-icon.svg"
           alt="magnifying glass"
