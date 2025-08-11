@@ -37,6 +37,17 @@
   line-height: 150%;
   color: var(--cor-api-light-gray);
   margin: 24px 0;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  /* Versão padrão */
+  box-orient: vertical;
+  line-clamp: 6;
+
+  /* Prefixado para WebKit */
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .layout_info {
