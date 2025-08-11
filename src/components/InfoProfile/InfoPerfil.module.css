@@ -1,0 +1,17 @@
+.info_profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info_profile > img {
+  height: 24px;
+  width: 24px;
+}
+
+.info_profile > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--cor-api-light-gray);
+}
