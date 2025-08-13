@@ -35,9 +35,9 @@
 
 .lupa {
   position: absolute;
-  margin-left: 1px;
-  height: 48px;
-  width: 48px;
+  margin-left: 12px;
+  height: 24px;
+  width: 24px;
 }
 
 .input > input {
