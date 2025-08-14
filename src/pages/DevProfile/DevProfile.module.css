@@ -1,9 +1,12 @@
 .container {
   height: 100vh;
+  background-color: #fcfcfc;
 }
 
 .main {
   padding: 0 112px 0 112px;
+  margin-top: 80px;
+  display: flex;
 }
 
 .header {
