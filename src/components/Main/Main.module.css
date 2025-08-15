@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 16px 16px 16px 16px;
+
+  flex: 1; /* ocupa o espaço restante no layout */
+  min-height: 0; /* permite encolher dentro de flex */
+  overflow-y: auto; /* scroll vertical quando estourar */
+  scroll-snap-type: y mandatory;
+  scroll-padding: 16px;
+}
+
+@media (min-width: 600px) {
+  .container {
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    padding: 24px;
+  }
+}
